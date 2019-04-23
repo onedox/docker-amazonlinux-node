@@ -1,6 +1,11 @@
-FROM ideavate/amazonlinux:2
+FROM ideavate/amazonlinux-node:10
 
-# install node
-RUN curl --silent --location https://rpm.nodesource.com/setup_10.x | bash \
- && yum upgrade -y \
- && yum install -y nodejs
+# Install docker
+RUN amazon-linux-extras install -y docker
+
+# Install git
+RUN yum install -y git
+
+# Install yarn
+RUN curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | tee /etc/yum.repos.d/yarn.repo \
+ && yum install -y yarn
