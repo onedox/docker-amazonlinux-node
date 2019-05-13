@@ -1,4 +1,4 @@
-FROM ideavate/amazonlinux-node:10
+FROM ideavate/amazonlinux-node:12
 
 # Install docker-cli
 RUN yum install -y yum-utils \
