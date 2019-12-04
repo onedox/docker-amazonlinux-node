@@ -7,3 +7,5 @@ Build tools:
 - docker
 - tar
 - bzip2
+- aws
+- eb
