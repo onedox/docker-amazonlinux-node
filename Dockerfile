@@ -2,6 +2,10 @@ FROM ideavate/amazonlinux-node:12
 
 RUN yum update -y
 
+# Install aws tools
+RUN yum install -y python3-pip
+RUN pip3 install awsebcli awscli --upgrade
+
 # Install docker-cli
 RUN yum install -y yum-utils \
  && yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo \
