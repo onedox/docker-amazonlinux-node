@@ -5,3 +5,5 @@ Build tools:
 - git
 - yarn
 - docker
+- tar
+- bzip2
