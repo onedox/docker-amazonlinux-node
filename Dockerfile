@@ -1,4 +1,4 @@
-FROM ideavate/amazonlinux-node:10
+FROM ideavate/amazonlinux-node:12
 
 # Include more serverless plugins than are actually needed for production
 RUN npm install -g \
