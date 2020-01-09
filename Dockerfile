@@ -1,5 +1,7 @@
 FROM ideavate/amazonlinux-node:12
 
+RUN yum install -y tar gzip bzip2
+
 # Include more serverless plugins than are actually needed for production
 RUN npm install -g \
   serverless \
