@@ -2,8 +2,10 @@ FROM ideavate/amazonlinux-node:12
 
 RUN yum install -y tar gzip bzip2
 
+WORKDIR /serverless
+
 # Include more serverless plugins than are actually needed for production
-RUN npm install -g \
+RUN npm install \
   serverless \
   serverless-offline \
   serverless-prune-plugin \
@@ -15,3 +17,5 @@ RUN npm install -g \
   serverless-finch \
   serverless-dynamodb-autoscaling \
   serverless-dynamodb-local
+
+ENV PATH="/serverless/node_modules/.bin:${PATH}"
