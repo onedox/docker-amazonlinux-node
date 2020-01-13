@@ -1,6 +1,6 @@
 FROM ideavate/amazonlinux-node:12
 
-RUN yum install -y tar gzip bzip2
+RUN yum install -y tar gzip bzip2 zip
 
 WORKDIR /serverless
 
