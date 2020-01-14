@@ -16,6 +16,7 @@ RUN npm install \
   serverless-plugin-include-dependencies \
   serverless-finch \
   serverless-dynamodb-autoscaling \
-  serverless-dynamodb-local
+  serverless-dynamodb-local \
+  serverless-plugin-additional-stacks
 
 ENV PATH="/serverless/node_modules/.bin:${PATH}"
