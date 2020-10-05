@@ -6,10 +6,8 @@ RUN yum update -y
 RUN yum install -y python3-pip
 RUN pip3 install awsebcli awscli --upgrade
 
-# Install docker-cli
-RUN yum install -y yum-utils \
- && yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo \
- && yum install -y docker-ce-cli
+# Install docker
+RUN amazon-linux-extras install -y docker
 
 # Install git, sudo, tar, bzip2
 RUN yum install -y git sudo tar bzip2
