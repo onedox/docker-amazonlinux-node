@@ -1,4 +1,4 @@
-# AmazonLinux 2 + NodeJS 12 + Build Tools
+# AmazonLinux 2 + NodeJS 14 + Build Tools
 
 Build tools:
 

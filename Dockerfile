@@ -1,4 +1,4 @@
-FROM ideavate/amazonlinux-node:12
+FROM ideavate/amazonlinux-node:14
 
 RUN yum update -y
 
