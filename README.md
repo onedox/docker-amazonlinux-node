@@ -1,1 +1,1 @@
-# AmazonLinux 2 + NodeJS 12
+# AmazonLinux 2 + NodeJS 14
